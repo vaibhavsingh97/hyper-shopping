@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="io.hypertrack:paho-1.1.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/paho-1.1.2-release.aar/b8ed09a267dbcad64fb1e9587a7a7808/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/paho-1.1.2-release.aar/b8ed09a267dbcad64fb1e9587a7a7808/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
