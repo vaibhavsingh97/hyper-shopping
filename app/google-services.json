@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "699426110640",
+    "firebase_url": "https://hyper-shopping-f2627.firebaseio.com",
+    "project_id": "hyper-shopping-f2627",
+    "storage_bucket": "hyper-shopping-f2627.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:699426110640:android:ea15a53ecfc08a3c",
+        "android_client_info": {
+          "package_name": "com.example.vaibhav.hypershopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "699426110640-kpk3ojlj9e086p2apiqopm5su2u9kmhd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4ddD-4fFTn61L6acpBjGho04yub_Jn-A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

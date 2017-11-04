@@ -18,6 +18,16 @@ android {
     }
 }
 
+/**
+ * HyperTrack SDKs are hosted on the below url. Add the url as specified below.
+ * If this exists already, add a new &quot;maven {url }&quot; entry in the existing
+ * repositories block.
+ */
+repositories {
+    maven { url 'http://hypertrack-android-sdk.s3-website-us-west-2.amazonaws.com/' }
+    }
+
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
@@ -25,4 +35,19 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.google.firebase:firebase-core:11.4.2'
+    /**
+     * HyperTrack SDKs are shipped as @aar formats. Include the HyperTrack SDK&#x27;s
+     * latest version as specified below. For detailed SDK changelog, Refer to
+     * https://docs.hypertrack.com/sdks/android/changelog.html.
+     *
+     * transitive = true, enables the SDK to include its internal dependencies
+     * automatically. Refer here for more info on HyperTrack SDK dependencies.
+     */
+    compile('com.hypertrack:android:0.4.20:release@aar') {
+        transitive = true;
+    }
+
 }
+
+apply plugin: 'com.google.gms.google-services'

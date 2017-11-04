@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="io.hypertrack:mqttv3:1.1.2:release@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.hypertrack/mqttv3/1.1.2/67041b6980e4d00480ad128b40bb05c706a50f6c/mqttv3-1.1.2-release.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
