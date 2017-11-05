@@ -20,12 +20,12 @@ android {
 
 /**
  * HyperTrack SDKs are hosted on the below url. Add the url as specified below.
- * If this exists already, add a new &quot;maven {url }&quot; entry in the existing
+ * If this exists already, add a new "maven {url }" entry in the existing
  * repositories block.
  */
 repositories {
     maven { url 'http://hypertrack-android-sdk.s3-website-us-west-2.amazonaws.com/' }
-    }
+}
 
 
 dependencies {
@@ -35,9 +35,11 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
-    compile 'com.google.firebase:firebase-core:11.4.2'
+    //noinspection GradleCompatible
+    //compile 'com.google.firebase:firebase-core:11.4.2'
+
     /**
-     * HyperTrack SDKs are shipped as @aar formats. Include the HyperTrack SDK&#x27;s
+     * HyperTrack SDKs are shipped as @aar formats. Include the HyperTrack SDK's
      * latest version as specified below. For detailed SDK changelog, Refer to
      * https://docs.hypertrack.com/sdks/android/changelog.html.
      *
@@ -48,6 +50,20 @@ dependencies {
         transitive = true;
     }
 
+
+
 }
 
-apply plugin: 'com.google.gms.google-services'
+apply plugin:'com.google.gms.google-services'
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '26.1.0'
+            }
+        }
+
+    }
+}
