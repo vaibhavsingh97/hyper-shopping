@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Hyper Shopping</string>
+    <string name="login_error_msg">Unable to login</string>
+    <string name="login_success_msg">Logged in successfully</string>
+    <string name="enable_location_settings">enable location settings</string>
+    <string name="login_error_msg_invalid_params">Invalid params</string>
+    <string name="login_activity_title">title</string>
 </resources>
